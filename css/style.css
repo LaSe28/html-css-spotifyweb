@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* classi comuni */
+
+
+
+/* sezione header */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:90%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header .btn{
+    padding: 0.4em 2em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 1em;
+    margin-right: 2rem;
+}
+
+/* sezione side */
+.central{
+    display: flex;
+}
+
+
+.side{
+    width: 192px;
+    height: calc(100vh - 5rem);
+    background-color: black;
+    flex-shrink: 0;
+}
+
+.logo{
+    width: 70%;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+/* sezione main */
+
+
+.section-main{
+    height: calc(100vh - 5rem);
+    display: inline-block;
+    background-color: red;
+    padding-top: 5rem;
+}
+
+/* sezione footer */
+
+footer{
+    height: 5rem;
+    background-color: #282828;
+}
