@@ -99,6 +99,7 @@ html{
     width:calc(100% - 192px);
     height: 5rem;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
 }
 
 .banner .btn{
@@ -108,6 +109,10 @@ html{
     border-radius: 2em;
     margin-right: 2rem;
     text-transform: uppercase;
+}
+
+.banner .btn:hover{
+    transform: scale(1.1, 1.1);
 }
 
 /* sezione centrale / side */
@@ -194,6 +199,10 @@ html{
 .playlists .fas{
 
     color: #A3A3A3;
+}
+
+.playlists span:hover .fas{
+    color: white;
 }
 
 .playlists{  
@@ -307,6 +316,17 @@ html{
     flex-wrap: wrap;
 }
 
+.nav li:first-of-type::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #C1FE5C;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+
 .nav a{
     text-decoration: none;
     color: #A3A3A3;
@@ -385,7 +405,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    bottom:0;
+    z-index: 11;
     height: 7rem;
     width: 100%;
     background-color: #282828;
@@ -403,13 +425,33 @@ footer img{
     width: 45px;
 }
 
+.icons .far{
+    color:#777777;
+    font-size: 1.1rem;
+}
+
+.icons .far:hover{
+    color: white;
+}
+
 .player-song{
     display: flex;
     align-items: center;
+    margin-left:1rem;
 }
 
 footer .artist{
-    font-size: 0.8rem;
+   font-size: 0.8rem;
+}
+
+footer .artist a{
+    text-decoration: none;
+    color:#777777;
+}
+
+footer .artist a:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 .player{
@@ -443,7 +485,7 @@ footer .artist{
     background-color: #5C5C5C;
     max-width: 500px;
     width: 30vw;
-    height: 7px;
+    height: 5px;
     border-radius: 1rem;
 }
 
@@ -451,7 +493,7 @@ footer .artist{
     background-color: #c4c4c4;
     border-radius: 1rem;
     width: 25%;
-    height: 7px;
+    height: 5px;
 }
 
 .progress:hover .progress-done{
@@ -465,8 +507,20 @@ footer .artist{
 .volume-sec .progress{
     background-color: #5C5C5C;
     width: 8vw;
-    height: 7px;
+    height: 5px;
     border-radius: 1rem;  
+}
+
+.progress-done .fas{
+    position: absolute;
+    right: -0.3rem;
+    top:-.4rem;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.progress:hover .progress-done .fas{
+    display: inline-block;
 }
 
 @media screen and (max-width: 640px){
