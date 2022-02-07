@@ -349,6 +349,14 @@ html{
     float: left;
 }
 
+.song img:hover,
+.song .title:hover,
+.song .artist{
+    cursor: pointer;
+}
+
+
+
 .song .far{
     position: absolute;
     top:50%;
