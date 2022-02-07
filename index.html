@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify Web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,31 +24,35 @@
 <!-- sezione centrale / side -->
 
     <div class="central">
-        <div class="side">
+        <div class="side pt-1">
             <div class="container-logo">
-                <img class="logo pt-1 pl-1" src="img/logo.svg" alt="">
+                <img class="large logo  pl-1" src="img/logo.svg" alt="">
+                <img class=" small" src="img/logo-small.svg" alt="">
             </div> 
-            <div class="menu pl-1 icon home">Home</div>
-            <div class="menu pl-1 icon search">Cerca</div>
-            <div class="menu pl-1 icon library"> La tua libreria</div>
-            <div class="playlists">
-                <h3>Playlist</h3>
-                <div>
-                    <span><i class="fas fa-plus-square"></i>Crea Playlist</span>
+            <div class="menu pl-1 home"><img src="img/home.svg" alt=""><span> Home</span></div>
+            <div class="menu pl-1 search"><img src="img/search.svg" alt=""><span> Cerca</span></div>
+            <div class="menu pl-1 library"> <img src="img/libreria.svg" alt=""><span> La tua libreria</span></div>
+            
+            <div class="playlist-sec">
+                <div class="playlists pl-1 pt-1">
+                    <h3>Playlist</h3>
+                    <div>
+                        <span><i class="fas fa-plus-square"></i>Crea Playlist</span>
+                    </div>
+                    <div class="playlist">Nome Playlist</div>
+                    <div class="playlist">Nome Playlist</div>
+                    <div class="playlist">Nome Playlist</div>
+                    <div class="playlist">Nome Playlist</div>
+                    <div class="playlist">Nome Playlist</div>
+                    <div class="playlist">Nome Playlist</div>
+                    <div class="playlist">Nome Playlist</div>
                 </div>
-                <div class="playlist">Nome Playlist</div>
-                <div class="playlist">Nome Playlist</div>
-                <div class="playlist">Nome Playlist</div>
-                <div class="playlist">Nome Playlist</div>
-                <div class="playlist">Nome Playlist</div>
-                <div class="playlist">Nome Playlist</div>
-                <div class="playlist">Nome Playlist</div>
-            </div>
-            <div class="user pb-1">
-                <div class="pb-1 pl-1"><i class="far fa-arrow-alt-circle-down"></i> Installa App</div>
-                <div class="profile pt-1">
-                    <div class="profile-pic"><img src="img/profile.svg" alt="immagine profilo utente"></div> 
-                    Jhon Doe
+                <div class="user pt-1 pb-1">
+                    <div class="pb-1 pr-1 pl-1"><i class="far fa-arrow-alt-circle-down"></i><span> Installa App</span> </div>
+                    <div class="profile pt-1">
+                        <div class="profile-pic"><img src="img/profile.svg" alt="immagine profilo utente"></div> 
+                        <span>Jhon Doe</span> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,75 +73,67 @@
             </div>
             
             <div class="row">
-                <h1 class="pl-1 pt-5 pb-1">Recently Played</h1>
+                <h2 class="pl-1 pt-3 pb-1">Recently Played</h2>
                 <div class="clearfix">
                     <div class="song">
                         <img src="img/metal_lifting.jpg" alt="metal">
-                        <h2 class="title">Heavy Metal</h2>
-                        <div class="artist">Subtitle</div>
+                        <h3 class="title pt-1">Heavy Metal</h3>
+                        <div class="artist pt-1">Subtitle</div>
                     </div>
                     <div class="song">
                         <img src="img/stranger.jpeg" alt="stranger things">
-                        <h2 class="title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack</h2>
-                        <div class="artist">Kyle Dixon  & Michael Stein</div>
+                        <h3 class="title pt-1">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack</h3>
+                        <div class="artist pt-1">Kyle Dixon  & Michael Stein</div>
                     </div>
                     <div class="song">
                         <img src="img/aquietplace.jpeg" alt="a quiet place">
-                        <h2 class="title"> A quiet place</h2>
-                        <div class="artist">Subtitle</div>
+                        <h3 class="title pt-1"> A quiet place</h3>
+                        <div class="artist pt-1">Subtitle</div>
                     </div>
                     <div class="song">
                         <img src="img/split.jpeg" alt="split">
-                        <h2 class="title">Split</h2>
-                        <div class="artist">Subtitle</div>
+                        <h3 class="title pt-1">Split</h3>
+                        <div class="artist pt-1">Subtitle</div>
                     </div>
                     <div class="song">
                         <img src="img/cure.jpeg" alt="a cure for a wellness">
-                        <h2 class="title">A cure for a wellness</h2>
-                        <div class="artist">Subtitle</div>
+                        <h3 class="title pt-1">A cure for a wellness</h3>
+                        <div class="artist pt-1">Subtitle</div>
                     </div>
                     <div class="song">
                         <img src="img/sinister.jpeg" alt="sinister">
-                        <h2 class="title">Sinister</h2>
-                        <div class="artist">Subtitle</div>
+                        <h3 class="title pt-1">Sinister</h3>
+                        <div class="artist pt-1">Subtitle</div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <h1 class="pl-1 pt-3 pb-1">Creato per Jhon Doe</h1>
+                <h2 class="pl-1 pt-3 pb-1">Creato per Jhon Doe</h2>
                 <p class="pl-1">Più ascolti, più accurati saranno i suggerimenti.</p>
                 <div class="clearfix">
                     <div class="song">
                         <img src="img/radar.jpeg" alt="release radar">
-                        <h2 class="title">Release Radar</h2>
+                        <h3 class="title pt-1">Release Radar</h3>
                     </div>
                     <div class="song">
                         <img src="img/mixdaily.jpeg" alt="daily mix 1">
-                        <h2 class="title">Daily Mix 1</h2>
+                        <h3 class="title pt-1">Daily Mix 1</h3>
                     </div>
                 </div>
             </div>
             <div class="last row">
-                <h1 class="pl-1 pt-3 pb-1">Artisti più popolari</h1>
+                <h2 class="pl-1 pt-3 pb-1">Artisti più popolari</h2>
                 <p class="pl-1">Più ascolti, più accurati saranno i suggerimenti.</p>
                 <div class="clearfix">
                     <div class="song">
                         <img src="img/youg.jpeg" alt="metal">
-                        <h2 class="title">Non Saprei</h2>
+                        <h3 class="title pt-1">Non Saprei</h3>
                     </div>
                     <div class="song">
                         <img src="img/einaudi.jpeg" alt="einaudi">
-                        <h2 class="title">Ludovico Einaudi</h2>
+                        <h3 class="title pt-1">Ludovico Einaudi</h3>
                     </div>
                 </div>
-            </div>
-            <div>
-
-
-            </div>
-            <div>
-
-
             </div>
         </main>
         
@@ -146,7 +142,45 @@
 <!-- sezione footer / player -->
 
     <footer>
-
+        <div class="footer-item">
+                <div class="player-song">
+                    <img src="img/sinister.jpeg" alt="">
+                    <div>
+                        <h4 class="title pl-05">Sinister</h4>
+                        <div class="artist pl-05">Artist Name</div>
+                    </div>
+                </div>
+                <div>
+                    <i class="far fa-heart"></i>
+                    <i class="far pl-1 fa-folder"></i>
+                </div>            
+        </div>
+        <div class="player">
+            <div class="player-btn pb-1">
+                <i class="fas pl-1 pr-1 fa-random"></i>
+                <i class="fas pl-1 pr-1 fa-step-backward"></i>
+                <i class="fas play-button  fa-play"></i>
+                <i class="fas pl-1 pr-1 fa-step-forward"></i>
+                <i class="fas pl-1 pr-1 fa-redo"></i>
+            </div>
+            <div class="progress-sec">
+                <div class=" pr-1">0:25</div>
+                <div class="progress">
+                    <div class="progress-done"></div>
+                </div>
+                <div class="pl-1">4:35</div>
+            </div>
+        </div>
+        <div class="volume-sec">
+            <i class="fas pr-1 fa-list-ul"></i>
+            <i class="fas pr-1 fa-desktop"></i>
+            <i class="fas pr-1 fa-volume-up"></i>
+            <div class="progress-sec pr-1">
+                <div class="progress">
+                    <div class="progress-done"></div>
+                </div>
+            </div>
+        </div>
 
     </footer>
 </body>
