@@ -284,7 +284,6 @@ html{
         margin-top: -1rem
     }
 
-
     .hidden{
         display: none;
     }
@@ -359,6 +358,10 @@ html{
     left: 20px;
 }
 
+.row p{
+    color: #a3a3a3;
+}
+
 .song{
     text-align: center;
     width: calc((100% - 12rem) / 6);
@@ -399,11 +402,6 @@ html{
     width: calc((100% - 8rem) / 4);
 
     }
-
-    .row{
-        height: 400px;
-        overflow-y: hidden;
-    }
 }
 
 @media screen and (max-width:650px) {
@@ -411,6 +409,31 @@ html{
     width: calc((100% - 4rem) / 2);
 
     }
+}
+
+@media screen and (max-width:560px) {
+    .song{
+        float: none;
+        height: auto;
+        width: 100%;
+        text-align: left;
+    }
+    .song img{
+        display: none;
+    }
+    .song:hover .far{
+        display: none;
+    }
+    .row{
+        display: flex;
+        flex-direction: column; 
+    }
+    .row h2{
+        border-bottom: 2px solid #a3a3a3;
+        padding: 0;
+        margin: 1rem;
+    }
+    
 }
 
 
