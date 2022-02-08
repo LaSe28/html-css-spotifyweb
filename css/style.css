@@ -244,6 +244,10 @@ html{
     flex-shrink: 0;
 }
 
+.user a:hover{
+    color: white;
+}
+
 .profile{
     color: white;
     border-top: 2px solid #A3A3A3;
