@@ -142,6 +142,7 @@ html{
 .side .menu:hover a{
     color: white;
 }
+
 .container-logo{
     height: 5rem;
     width: 192px;
@@ -563,8 +564,14 @@ footer .artist a:hover{
 }
 
 @media screen and (max-width: 510px){
-    .title,
-    .artist{
+    footer .title,
+    footer .artist{
         display: none;
+    }
+
+    .fas:first-of-type,
+    .player-btn .fas:last-of-type{
+        display: none;
+
     }
 }
