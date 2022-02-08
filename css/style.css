@@ -96,10 +96,10 @@ html{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 10;
     width:calc(100% - 192px);
     height: 5rem;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 10;
 }
 
 .banner .btn{
@@ -139,9 +139,10 @@ html{
     color: #707070;
 }
 
-.side a:hover{
+.side .menu:hover a{
     color: white;
 }
+
 .container-logo{
     height: 5rem;
     width: 192px;
