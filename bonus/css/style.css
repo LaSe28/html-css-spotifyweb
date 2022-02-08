@@ -519,6 +519,15 @@ footer .artist a:hover{
 
 .progress:hover .progress-done{
     background-color: #C1FE5C;
+    animation: progress-bar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes progress-bar{
+    50%{
+        width: 100%;
+    }
 }
 
 .volume-sec{
