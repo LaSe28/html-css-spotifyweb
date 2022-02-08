@@ -522,7 +522,7 @@ footer .artist a:hover{
 .progress-done .fas{
     position: absolute;
     right: -0.3rem;
-    top:-.4rem;
+    top:-.3rem;
     font-size: 1.1rem;
     display: none;
 }
